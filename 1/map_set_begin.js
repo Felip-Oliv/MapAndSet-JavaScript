@@ -12,7 +12,7 @@ saturday.set(9, 'wall the dog');
 saturday.set(12, 'lunch');
 saturday.set(3, "watch a movie");
 
-console.log(saturday)
+console.log(saturday);
 
 //How do we get the value associated with the 12 key?
 const noon = saturday.get(12);
@@ -35,5 +35,6 @@ console.log("Does our map have four?", hasFour);
 const hasEight = saturday.has(4);
 console.log("Does our map have four?", hasEight);
 
-
-
+//What is the size of Saturday?
+const saturdaySize = saturday.size;
+console.log(`My map contains', ${saturdaySize} elements.`)
