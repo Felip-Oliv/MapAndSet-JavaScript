@@ -41,16 +41,29 @@ console.log(`My map contains', ${saturdaySize} elements.`)
 
 
 //Delete the element associated with the key 3.
-console.log(
-    "Did my key-value pair successfully delete - 3",
-    saturday.delete(3)
-);
+//console.log(
+    //"Did my key-value pair successfully delete - 3",
+    //saturday.delete(3)
+//);
 // Delete the element associated with the key 7.
-console.log(
-    "Did my key-value pair successfully delete - 10",
-    saturday.delete(10)
-);
+//console.log(
+    //"Did my key-value pair successfully delete - 10",
+    //saturday.delete(10)
+//);
 // Clear the entire saturday map object.
 
-saturday.clear();
+//saturday.clear();
 console.log("Map size?", saturday.size)
+
+//What is the first key in your Saturday Map Object?
+const saturdayKeys = saturday.keys();
+const firstKey = saturdayKeys.next().value;
+console.log("The first key in our saturday map is: ", firstKey)
+
+//What is the second key in your Saturday Map Object?
+
+const saturdayValues = saturday.values();
+saturdayValues.next();
+const secondValue = saturdayValues.next().value;
+
+console.log("The 2nd value in our Saturday map is: ", secondValue);
